@@ -5,7 +5,7 @@ export const Publisher = () => {
 
     return (
         <div>
-            VALUE: {data.value}
+            <div>VALUE: {data.value}</div>
             <button onClick={() => actions.publisher.setValue({ value: data.value + 1 })}>
                 INCREMENT
             </button>

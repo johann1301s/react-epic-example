@@ -8,4 +8,10 @@ export type TPublisherActions = DefineActions<{
         }
     }
 
+    increaseValue: {
+        payload: {
+            value: number
+        }
+    }
+
 }>

@@ -8,9 +8,8 @@ effects.addEffect({
     action: 'setValue',
     type: 'takeLatest',
     handler: async (ctx) => {
-        ctx.getState()
         await sleep(2000)
-        ctx.actions.publisher.setValue({
+        ctx.actions.publisher.increaseValue({
             value: ctx.action.payload.value + 1
         })
     }
